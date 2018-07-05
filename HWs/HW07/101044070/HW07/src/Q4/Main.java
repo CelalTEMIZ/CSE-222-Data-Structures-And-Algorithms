@@ -1,0 +1,105 @@
+
+package Q4;
+
+import java.util.*;
+
+public class Main {
+
+        public static void main(String args[])
+        {
+            try {
+
+                // Given adjacency matrix to graph.
+                ListGraph g = new ListGraph(7, false);
+                g.insert(new Edge(0, 1));
+                g.insert(new Edge(0, 5));
+                g.insert(new Edge(1, 2));
+                g.insert(new Edge(2, 4));
+                g.insert(new Edge(2, 5));
+                g.insert(new Edge(2, 6));
+                g.insert(new Edge(3, 4));
+                g.insert(new Edge(3, 5));
+                g.insert(new Edge(4, 5));
+
+
+                System.out.println("\n\nBreadth First Search :");
+                breadthFirstSearch(g,1);
+
+
+                DepthFirstSearch dfs = new DepthFirstSearch(g);
+                int[] dOrder = dfs.getDiscoveryOrderOrder();
+                int[] fOrder = dfs.getFinishOrder();
+                System.out.println("\n\nDepth First Search :");
+                for (int i = 0; i <g.getNumV(); i++) {
+                    System.out.printf("%d-",fOrder[i]);
+                }
+                System.out.println();
+
+            }catch(Exception E){
+                System.out.println("\nAn Exception Caught : " + E);
+            }
+
+
+        }
+
+
+
+    /**
+     * Reference : Course Book - Listing 10.3
+     *
+     * Perform breadth-first search algorithm.
+     * post: The array parent will contain the predecessor of each vertex in the breadth-first search tree.
+     * @param graph The graph to be searched.
+     * @param start The start vertex.
+     * @return The array of parents.
+     */
+    public static int [] breadthFirstSearch(ListGraph graph, int start)
+    {
+        Queue<Integer> theQueue= new LinkedList<Integer>();
+        // Declare array parent and initialize its element to -1
+        int[] parent=new int[graph.getNumV()];
+
+        for(int i=0;i<graph.getNumV();i++)
+        {
+            parent[i]=-1;
+        }
+
+        // Declare array identified and
+        // initialize its elements to false
+        boolean[] identified=new boolean[graph.getNumV()];
+
+        // Mark the start vertex as identified and insert it into the queue
+        identified[start]=true;
+        theQueue.offer(start);
+
+        // Perform breadth-first search until done
+        while(!theQueue.isEmpty()){
+            // Take a vertex, current, out of the queue. (Begin visiting current)
+            int current= theQueue.remove();
+            System.out.printf("%d-",current);
+            // Examine each vertex,neighbor, adjacent to current
+            Iterator<Edge> itr= graph.edgeIterator(current);
+            while (itr.hasNext())
+            {
+                Edge edge=itr.next();
+                int neighbor=edge.getDest();
+
+                // If neighbor has not been identified
+                if(!identified[neighbor])
+                {
+                    //Mark it identified
+                    identified[neighbor]=true;
+                    //Place it into the queue
+                    theQueue.offer(neighbor);
+                    //Insert the edge(current,neighbor) into the tree
+                    parent[neighbor]=current;
+                }
+            }
+
+            // Finished visiting current
+        }
+        return parent;
+    }
+
+
+}

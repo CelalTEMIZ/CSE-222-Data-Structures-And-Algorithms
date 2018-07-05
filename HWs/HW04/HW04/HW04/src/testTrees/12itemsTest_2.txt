@@ -1,0 +1,12 @@
+Celal
+Ahmet,Celal
+Ayşe,Celal
+Selma,Celal
+Hakan,Celal
+Derya,Selma
+Caner,Selma
+Pelin,Derya
+Onur,Ayşe
+Atakan,Ahmet
+Can,Ahmet
+Esra,Atakan

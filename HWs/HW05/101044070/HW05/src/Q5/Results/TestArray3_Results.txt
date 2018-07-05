@@ -1,0 +1,13 @@
+Insertion Sort        : 77705319
+Merge Sort			  : 2492598
+Quick Sort			  : 76486054
+Heap Sort			  : 22499934
+Merge Sort LinkedList : 13028073
+
+
+*** Average Running Times ***
+Insertion Sort        : 15541
+Merge Sort			  : 498
+Quick Sort			  : 15297
+Heap Sort			  : 4499
+Merge Sort LinkedList : 2605

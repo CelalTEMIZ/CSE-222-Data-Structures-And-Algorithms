@@ -1,0 +1,76 @@
+Insertion Sort        : 302445
+Merge Sort			  : 37411
+Quick Sort			  : 195433
+Heap Sort			  : 286917
+Merge Sort LinkedList : 579736
+
+
+Insertion Sort        : 10378
+Merge Sort			  : 49340
+Quick Sort			  : 223902
+Heap Sort			  : 305789
+Merge Sort LinkedList : 11796
+
+
+Insertion Sort        : 14978
+Merge Sort			  : 39289
+Quick Sort			  : 279327
+Heap Sort			  : 325650
+Merge Sort LinkedList : 12211
+
+
+Insertion Sort        : 15038
+Merge Sort			  : 39935
+Quick Sort			  : 224244
+Heap Sort			  : 321947
+Merge Sort LinkedList : 12795
+
+
+Insertion Sort        : 17263
+Merge Sort			  : 38281
+Quick Sort			  : 205585
+Heap Sort			  : 651753
+Merge Sort LinkedList : 36429
+
+
+Insertion Sort        : 15343
+Merge Sort			  : 41052
+Quick Sort			  : 206330
+Heap Sort			  : 440247
+Merge Sort LinkedList : 10488
+
+
+Insertion Sort        : 10302
+Merge Sort			  : 92333
+Quick Sort			  : 385790
+Heap Sort			  : 446347
+Merge Sort LinkedList : 10189
+
+
+Insertion Sort        : 15070
+Merge Sort			  : 40440
+Quick Sort			  : 319394
+Heap Sort			  : 335847
+Merge Sort LinkedList : 10357
+
+
+Insertion Sort        : 11340
+Merge Sort			  : 51807
+Quick Sort			  : 241178
+Heap Sort			  : 288557
+Merge Sort LinkedList : 12596
+
+
+Insertion Sort        : 12039
+Merge Sort			  : 53645
+Quick Sort			  : 247625
+Heap Sort			  : 292026
+Merge Sort LinkedList : 10430
+
+
+*** Average Running Times ***
+Insertion Sort        : 2120
+Merge Sort			  : 2417
+Quick Sort			  : 12644
+Heap Sort			  : 18475
+Merge Sort LinkedList : 3535
